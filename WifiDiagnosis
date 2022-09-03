@@ -1,0 +1,131 @@
+/*
+ * Class: CMSC203 
+ * Instructor: Professor Monshi
+ * Description: This program helps diagnosis a Wifi issue for the user.
+ * Due: 09/12/2022
+ * Platform/compiler: Eclipse
+ * I pledge that I have completed the programming 
+ * assignment independently. I have not copied the code 
+ * from a student or any source. I have not given my code 
+ * to any student.
+   Print your Name here: Katherine Hong
+*/
+
+import java.util.Scanner;
+
+public class WifiDiagnosis {
+
+	public static void main(String[] args) {
+		
+		// The following creates scanner object to read input
+		
+		Scanner keyboard = new Scanner(System.in);
+		
+		// The following creates the necessary variables for the program
+		
+		String ans;
+		String input;
+		//char yes1 = 'Y';
+		//char yes2 = 'y';
+		//char no1 = 'N';
+		//char no2 = 'n';
+		String yes1 = "Y";
+		String yes2 = "y";
+		String yes3 = "Yes";
+		String yes4 = "yes";
+		String no1 = "N";
+		String no2 = "n";
+		String no3 = "No";
+		String no4 = "no";
+		
+		// The following displays the application header
+		
+		System.out.println("If you have a problem with internet connectivity this WiFi Diagnosis might work.\n");
+		
+		// The following is the Wifi diagnosis
+		
+		System.out.println("Reboot the computer and try to connect.");
+		
+		System.out.println("Did that fix the problem? (Enter Yes/No)");
+		//input = keyboard.nextLine();
+		//ans = input.charAt(0);
+		ans = keyboard.nextLine();
+		
+		if(ans.equals(yes1) || ans.equals(yes2) || ans.equals(yes3) || ans.equals(yes4))
+		{
+			System.out.println("Done.");
+			System.out.println("Programmer: Katherine Hong");
+		}
+		else if(ans.equals(no1) || ans.equals(no2) || ans.equals(no3) || ans.equals(no4))
+		{
+			System.out.println("Reboot the router and try to connect.");
+			System.out.println("Did that fix the problem? (Enter Yes/No)");
+			//input = keyboard.nextLine();
+			//ans = input.charAt(0);
+			ans = keyboard.nextLine();
+			
+			if(ans.equals(yes1) || ans.equals(yes2) || ans.equals(yes3) || ans.equals(yes4))
+			{
+				System.out.println("Done.");
+				System.out.println("Programmer: Katherine Hong");
+			}
+			else if(ans.equals(no1) || ans.equals(no2) || ans.equals(no3) || ans.equals(no4))
+			{
+				System.out.println("Make sure the cables connecting to the router"
+						+ " are firmly plugged in and power is getting to the router.");
+				System.out.println("Did that fix the problem? (Enter Yes/No)");
+				//input = keyboard.nextLine();
+				//ans = input.charAt(0);
+				ans = keyboard.nextLine();
+				
+				if(ans.equals(yes1) || ans.equals(yes2) || ans.equals(yes3) || ans.equals(yes4))
+				{
+					System.out.println("Done.");
+					System.out.println("Programmer: Katherine Hong");
+				}
+				else if(ans.equals(no1) || ans.equals(no2) || ans.equals(no3) || ans.equals(no4))
+				{
+					System.out.println("Move the computer closer to the router"
+							+ " and try to connect.");
+					System.out.println("Did that fix the problem? (Enter Yes/No)");
+					//input = keyboard.nextLine();
+					//ans = input.charAt(0);
+					ans = keyboard.nextLine();
+					
+					if(ans.equals(yes1) || ans.equals(yes2) || ans.equals(yes3) || ans.equals(yes4))
+					{
+						System.out.println("Done.");
+						System.out.println("Programmer: Katherine Hong");
+					}
+					else if(ans.equals(no1) || ans.equals(no2) || ans.equals(no3) || ans.equals(no4))
+					{
+						System.out.println("Contact your ISP.");
+						System.out.println("Programmer: Katherine Hong");
+					}
+					else 
+					{
+						System.out.println("Invalid answer; try again.");
+					}
+					
+				}
+				else 
+				{
+					System.out.println("Invalid answer; try again.");
+				}
+				
+			}
+			else 
+			{
+				System.out.println("Invalid answer; try again.");
+			}
+			
+		}
+		else 
+		{
+			System.out.println("Invalid answer; try again.");
+		}
+		
+		
+	}
+
+}
